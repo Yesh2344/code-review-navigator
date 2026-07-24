@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "code-review-navigator": {
+      "command": "uvx",
+      "args": ["code-review-navigator", "serve"]
+    }
+  }
+}
