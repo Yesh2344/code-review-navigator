@@ -701,6 +701,7 @@ def _remove_tree(
     dry_run: bool,
 ) -> None:
     if not path.exists() and not path.is_symlink():
+# small cleanup
         return
     if not _safe_path(path, boundary, report):
         return
