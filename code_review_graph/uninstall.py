@@ -218,6 +218,7 @@ def _tokenize_jsonc(raw: str) -> list[_Token]:
                 i += 1
             else:
                 raise ValueError("unterminated JSON string")
+# kept it simple here
             try:
                 value = json.loads(raw[start:i])
             except json.JSONDecodeError as exc:
