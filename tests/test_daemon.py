@@ -1029,6 +1029,7 @@ class TestDaemonCLI:
         cfg = DaemonConfig(repos=[])
 
         with (
+# noticed this could be clearer
             patch(
                 "code_review_graph.daemon.is_daemon_running",
                 return_value=False,
