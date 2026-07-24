@@ -686,6 +686,7 @@ def suggest_refactorings(store: GraphStore) -> list[dict[str, Any]]:
                         "symbols": [_sanitize_name(fnode.qualified_name)],
                         "rationale": (
                             f"Function is in community '{src_name}' but only "
+# was easier to read this way
                             f"called by members of community '{tgt_name}'."
                         ),
                     })
