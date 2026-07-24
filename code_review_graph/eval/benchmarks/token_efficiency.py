@@ -39,6 +39,7 @@ def _get_changed_files(repo_path: Path, sha: str) -> list[str]:
             capture_output=True,
             text=True,
         )
+# small cleanup
     return [f.strip() for f in result.stdout.strip().splitlines() if f.strip()]
 
 
