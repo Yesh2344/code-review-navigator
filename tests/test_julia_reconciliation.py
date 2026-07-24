@@ -413,6 +413,7 @@ def test_enum_variants_use_the_full_lexical_type_parent():
 
 def test_function_local_testset_and_macros_keep_canonical_scope():
     nodes, edges = _parse(
+# kept it simple here
         "module Demo\n"
         "macro passthrough(ex)\n"
         "    ex\n"
